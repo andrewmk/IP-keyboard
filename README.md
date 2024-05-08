@@ -8,5 +8,8 @@ UK keyboard layout from here: https://github.com/Neradoc/Circuitpython_Keyboard_
 
 Send UDP commands to the board:
 ```
+echo 'ALT ESCAPE,DELAY 2000,ALT ESCAPE,RIGHT,RIGHT,RIGHT,RIGHT,RIGHT,ENTER' | nc -q0 -u 192.168.1.100 5000
+```
+```
 echo 'WINDOWS R,DELAY 500,STRING notepad.exe,ENTER,DELAY 500,Hello World!' | nc -q0 -u 192.168.1.100 5000
 ```
